@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+    <data>
+        <variable
+            name="model"
+            type="com.example.task_123.model.LanguageModel" />
+
+    </data>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        style="@style/Widget.Material3.CardView.Elevated"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{model.languageName}"
+            />
+    </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>
